@@ -1,0 +1,170 @@
+1. Git е инсталиран и креиран е Github профил.
+
+2. Променето е името на главната гранка во master.
+
+3. Направено директно на github со commit "Update README.md".
+
+4. Во локална папка креирана на desktop, преку Git CMD, извршена е командата git clone https://github.com/igorarsenovski/SI_2022_lab1_203075.git и влегуваме во репозиториумот.
+
+5. Креирање на датотеката shopping_list и запишување во неа со командите echo.>, echo > и echo >>. Со git add . се става на сцена и правиме commit со соодветната порака.
+   echo.> shopping_list.txt
+   echo bread > shopping_list.txt
+   echo milk >> shopping_list.txt
+   echo eggs >> shopping_list.txt
+   echo water >> shopping_list.txt
+   echo chocolate >> shopping_list.txt
+   git add .
+   git commit -m "Add 5 items to the shopping list"
+
+6. Ја користиме командата notepad shopping_list, каде директно правиме измени во самата датотека. Се става на сцена и се прави commit.
+   git add .
+   git commit -m "Add quantities to the items."
+
+7. Креирање на гранки со командите:
+   git branch branch1
+   git branch branch2
+
+8. Логови со командата git log:
+commit c641b07ebc51fea297ac20bb0d9f3b96f305299e (HEAD -> master, branch2, branch1)
+Author: Igor Arsenovski <igorarsenovski@gmail.com>
+Date:   Wed Mar 30 19:46:48 2022 +0200
+
+    Add quantities to the items.
+
+commit 8e59335c2b822c4373a55c5723caa2d2b79a633f
+Author: Igor Arsenovski <igorarsenovski@gmail.com>
+Date:   Wed Mar 30 19:45:20 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 899554e66b657ade9b12645b8b6f8bd5e958b05e (origin/master, origin/HEAD)
+Author: Igor Arsenovski <100704477+igorarsenovski@users.noreply.github.com>
+Date:   Wed Mar 30 19:38:19 2022 +0200
+
+    Update README.md
+
+commit 44f953042d82b1bedf5f3b5b81c58cddfbc66d39
+Author: Igor Arsenovski <100704477+igorarsenovski@users.noreply.github.com>
+Date:   Wed Mar 30 19:37:27 2022 +0200
+    Initial commit
+
+9. Синхронизација на гранките со командите:
+   git push -u origin master
+   git push -u origin branch1
+   git push -u origin branch2
+
+10. Префрлување на гранката branch1:
+    git checkout branch1
+
+11. Ја користиме командата notepad shopping_list, каде директно правиме измени во самата датотека. Се става на сцена и се прави commit.
+    git add .
+    git commit -m "Change quantity of item #5"
+
+12. Враќање на гранката master:
+    git checkout master
+
+13. Ја користиме командата notepad shopping_list, каде директно правиме измени во самата датотека. Се става на сцена и се прави commit.
+    git add .
+    git commit -m "Change quantity of item #2"
+
+14. Синхронизација на гранките со командите:
+    git push -u origin master
+    git push -u origin branch1
+    git push -u origin branch2
+
+15. Префрлување на гранката branch2:
+    git checkout branch2
+
+16. Ја користиме командата notepad shopping_list, каде директно правиме измени во самата датотека. Се става на сцена и се прави commit.
+    git add .
+    git commit -m "Modify item #4"
+
+17. Логови со командата git log: 
+commit 41bd8d1267ff50f24a69d5c80e8af3557d5e8238 (HEAD -> branch2)
+Author: Igor Arsenovski <igorarsenovski@gmail.com>
+Date:   Wed Mar 30 20:16:22 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit c641b07ebc51fea297ac20bb0d9f3b96f305299e (origin/branch2)
+Author: Igor Arsenovski <igorarsenovski@gmail.com>
+Date:   Wed Mar 30 19:46:48 2022 +0200
+
+    Add quantities to the items.
+
+commit 8e59335c2b822c4373a55c5723caa2d2b79a633f
+Author: Igor Arsenovski <igorarsenovski@gmail.com>
+Date:   Wed Mar 30 19:45:20 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 899554e66b657ade9b12645b8b6f8bd5e958b05e
+Author: Igor Arsenovski <100704477+igorarsenovski@users.noreply.github.com>
+Date:   Wed Mar 30 19:38:19 2022 +0200
+
+    Update README.md
+
+commit 44f953042d82b1bedf5f3b5b81c58cddfbc66d39
+Author: Igor Arsenovski <100704477+igorarsenovski@users.noreply.github.com>
+Date:   Wed Mar 30 19:37:27 2022 +0200
+
+    Initial commit
+
+18. Ја користиме командата notepad shopping_list, каде директно правиме измени во самата датотека, а потоа ја извршуваме командата:
+    git commit -a --amend -m "Modify item #4 and add item #6"
+
+19. Логови со командата git log: 
+commit ce13c65a21fd872d39701bd003749b7e3ea605ff (HEAD -> branch2)
+Author: Igor Arsenovski <igorarsenovski@gmail.com>
+Date:   Wed Mar 30 20:16:22 2022 +0200
+
+    Modify item #4
+
+commit c641b07ebc51fea297ac20bb0d9f3b96f305299e (origin/branch2)
+Author: Igor Arsenovski <igorarsenovski@gmail.com>
+Date:   Wed Mar 30 19:46:48 2022 +0200
+
+    Add quantities to the items.
+
+commit 8e59335c2b822c4373a55c5723caa2d2b79a633f
+Author: Igor Arsenovski <igorarsenovski@gmail.com>
+Date:   Wed Mar 30 19:45:20 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 899554e66b657ade9b12645b8b6f8bd5e958b05e
+Author: Igor Arsenovski <100704477+igorarsenovski@users.noreply.github.com>
+Date:   Wed Mar 30 19:38:19 2022 +0200
+
+    Update README.md
+
+commit 44f953042d82b1bedf5f3b5b81c58cddfbc66d39
+Author: Igor Arsenovski <100704477+igorarsenovski@users.noreply.github.com>
+Date:   Wed Mar 30 19:37:27 2022 +0200
+
+    Initial commit
+
+20. Префрлување на master и спојување со branch1:
+    git checkout master
+    git merge branch1
+    
+    // нема конфликт
+
+21. Спојување на branch2 со master:
+    git merge branch2
+    
+    // настана конфликт
+    // конфликтот го решаваме со командите во прилог
+
+    git add .
+    git commit -m "Resolve merge conflict"
+    git merge branch2
+
+22. Додадена е датотеката и направен е commit:
+    git add 203075.txt
+    git commit -m "Add docs"
+
+23. Синхронизација на гранките со командите:
+    git push -u origin master
+    git push -u origin branch1
+    git push -u origin branch2
