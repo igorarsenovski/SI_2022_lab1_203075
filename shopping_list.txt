@@ -2,4 +2,4 @@ bread x 2
 milk x 3
 eggs x 4
 water x 5
-chocolate x 6 
+chocolate x 8 
