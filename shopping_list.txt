@@ -1,5 +1,11 @@
 bread x 2 
 milk x 1
 eggs x 4
+<<<<<<< HEAD
 water x 5
 chocolate x 8 
+=======
+apples x 5
+chocolate x 6 
+banana x 4
+>>>>>>> branch2
